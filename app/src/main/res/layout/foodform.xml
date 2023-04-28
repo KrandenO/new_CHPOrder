@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/household4">>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".foodForm">
+
+    <TextView
+        android:id="@+id/riceQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/riceQ"
+        style="@style/textLook"/>
+    <RadioGroup
+        android:id="@+id/riceRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/whiteRice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/whiteRice"
+            android:onClick="masterClick"
+            style="@style/radioLook"/>
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/brownRice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brownRice"
+            android:onClick="masterClick"
+            style="@style/radioLook"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/grainQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grainsQ"
+        style="@style/textLook"/>
+
+    <RadioGroup
+        android:id="@+id/grainsRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <RadioButton
+            android:id="@+id/grits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/grits"
+            android:onClick="masterClick"
+            style="@style/radioLook"/>
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <RadioButton
+            android:id="@+id/oatMeal"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="@string/oatmeal"
+            android:onClick="masterClick"
+            style="@style/radioLook"/>
+
+        <Space
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/juiceQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/juiceQ"
+        style="@style/textLook"/>
+
+    <ToggleButton
+        android:id="@+id/juiceToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="@string/apple"
+        android:textOn="@string/grape"
+        android:onClick="masterClick"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/cerealLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cerealQ"
+        style="@style/textLook"/>
+
+    <EditText
+        android:id="@+id/cereal_Input"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cereal_Input"
+        style="@style/inputLook"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+
+    <TextView
+        android:id="@+id/milk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/milkQ"
+        style="@style/textLook" />
+
+    <RadioGroup
+        android:id="@+id/milkRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/yesMilk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/yes"
+            android:onClick="masterClick"
+            style="@style/radioLook" />
+
+        <Space
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/noMilk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:onClick="masterClick"
+            style="@style/radioLook" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/otherList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/extraQ"
+        style="@style/textLook"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/check1"
+            style="@style/inputLook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cake"
+            android:onClick="masterClick"/>
+
+        <CheckBox
+            android:id="@+id/check2"
+            style="@style/inputLook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/canned_goods"
+            android:onClick="masterClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/granola_bars"
+            android:onClick="masterClick"
+            style="@style/inputLook"/>
+
+        <CheckBox
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pudding"
+            android:onClick="masterClick"
+            style="@style/inputLook"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cookies"
+            android:onClick="masterClick"
+            style="@style/inputLook"/>
+
+        <CheckBox
+            android:id="@+id/check6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/chips"
+            android:onClick="masterClick"
+            style="@style/inputLook"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="previousPage"
+            android:text="@string/back"
+            style="@style/buttonText"/>
+
+        <Space
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/nextPage"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:onClick="nextPage"
+            android:text="@string/next"
+            style="@style/buttonText" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

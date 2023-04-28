@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".householdForm"
+    android:background="@drawable/household4">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seniorQ"
+        style="@style/textLook" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/seniorGroup">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/yesSenior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:onClick="dualPicker"
+            style="@style/radioLook2"/>
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/noSenior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:onClick="dualPicker"
+            style="@style/radioLook2" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/adultNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adultNumQ"
+        style="@style/textLook"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/textLook"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="@string/two" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:indeterminate="false"
+        android:max="3"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/kidNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kidsQ"
+        style="@style/textLook"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/yesKid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:onClick="dualPicker"
+            style="@style/radioLook2" />
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/noKid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:onClick="dualPicker"
+            style="@style/radioLook2" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="134dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="138dp">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="previousPage"
+                android:text="@string/back"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="160dp"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+
+                android:onClick="nextPage"
+                android:text="@string/next"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+</LinearLayout>

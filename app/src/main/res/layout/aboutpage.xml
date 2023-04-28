@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".aboutPage"
+    android:background="@color/green">
+
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        style="@style/textLook"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/border"
+        android:text="@string/about_us" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="418dp">
+
+        <TextView
+            android:id="@+id/aboutText"
+            style="@style/aboutTextLook"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:text="@string/aboutDesc" />
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="101dp" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:onClick="homePage"
+        style="@style/buttonText"/>
+</LinearLayout>

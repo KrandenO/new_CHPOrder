@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green">
+
+    <TextView
+        android:id="@+id/titleItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weekly_item_help_list"
+        style="@style/titleTextLook"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/textLook"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:text="@string/helpMessage" />
+
+    <TextView
+        android:id="@+id/itemHelpList"
+        style="@style/listLook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemHelpList"
+        android:translationX="30dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/thx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thanks"
+        style="@style/textLook"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="@string/back_to_home"
+        android:onClick="backToHome"
+        style="@style/buttonText"/>
+</LinearLayout>

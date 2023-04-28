@@ -1,0 +1,77 @@
+<resources>
+    //universal strings
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="two">2</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="placeholder">Placeholder</string>
+
+    //homepage strings
+    <string name="pantryHeader">Community Helping Place: Food Calculator</string>
+    <string name="orderForm">Calculate Food</string>
+    <string name="itemHelp">Item Donations</string>
+    <string name="about">About</string>
+    <string name="contact">Contact</string>
+
+    //household questions
+    <string name="seniorQ"><b>Anyone above the age of 70 in the household?</b></string>
+    <string name="adultNumQ">How many adults are in the household?</string>
+    <string name="kidsQ">Are there any kids in the household?</string>
+
+    //Order form questions
+    <string name="app_name">CHPOrder</string>
+    <string name="riceQ"><b>Please select a rice flavor.</b></string>
+    <string name="whiteRice">White</string>
+    <string name="brownRice">Brown</string>
+
+    <string name="grainsQ">Which grains would you like?</string>
+    <string name="grits">Grits</string>
+    <string name="oatmeal">Oatmeal</string>
+
+    <string name="juiceQ">Juice Preference (Tap to change)</string>
+    <string name="apple">Apple</string>
+    <string name="grape">Grape</string>
+
+    <string name="cerealQ">Enter which cereal you would like:</string>
+    <string name="cereal_Input">Enter cereal here:</string>
+
+    //food form: Deluxe strings
+    <string name="milkQ">Would you like milk?</string>
+    <string name="extraQ">Please select all extra items you would like:</string>
+
+    <string name="cake">Cake</string>
+    <string name="pudding">Pudding</string>
+    <string name="canned_goods">Canned Goods</string>
+    <string name="cookies">Cookies</string>
+    <string name="chips">Chips</string>
+    <string name="granola_bars">Granola Bars</string>
+
+    //result xml
+    <string name="resultTitle">Complete Order Ticket</string>
+    //result items
+    <string name="resultList"> </string>
+    <string name="contact_here_for_order">Contact Here for Order</string>
+
+    //weekly item help list
+    <string name="weekly_item_help_list">Weekly Item Help List</string>
+    <string name="itemHelpList">• Soup\n• Cereal\n• Canned Potatoes\n• Jelly\n• Crackers\n• Vegetable Oil</string>
+    <string name="helpMessage">Bring these items in on Monday or Wednesday any time from 8:00–10:00.</string>
+    <string name="thanks">Thank You!</string>
+
+    //about page
+    <string name="about_us">About Us</string>
+    <string name="aboutDesc"><b>Welcome to the Community Helping Hands Center! At our center we have plenty of food for you and your family free of price. We know that food insecurity is a real issue that affects many individuals and families in our community. Thats why we’re dedicated to providing a safe and welcoming space where people in need can come and get the food they need to thrive.\n
+        \nOur app is designed to help connect people in need with the resources they require. It allows you to see what we have to food we have to offer to those who need it and calculates how much for every individual in your household. You can easily search for the resources you need and get directions to the nearest location. You can also call or email us to speak to someone for assistance.\n
+        \nWe believe that everyone deserves access to healthy and nutritious food, regardless of their income or circumstances. That’s why we work hard to provide plenty of healthy high quality food options, including options for those who have food allergies. From whole grains to fresh produce to canned goods, we have everything you need to stay healthy.\n
+        \nSo come down to our donation center and see what we have to offer, our friendly staff are always here to help, and we’re committed to having a positive difference in our community.</b></string>
+
+    //contact page
+    <string name="contactInfo">If you need to get in contact with us please refer to the different contact options below:</string>
+    <string name="callString">Call Us</string>
+    <string name="emailString">Email Us</string>
+    <string name="directionString">Directions</string>
+    <string name="contactHome">Home</string>
+</resources>

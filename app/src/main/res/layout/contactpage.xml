@@ -1,0 +1,120 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".contactPage"
+    android:background="@color/green">
+
+    <TextView
+        android:id="@+id/contact_text"
+        style="@style/textLook"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:text="@string/contactInfo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="65dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/callButton"
+            style="@style/buttonText"
+            android:onClick="makeCall"
+            android:layout_width="244dp"
+            android:layout_height="95dp"
+            android:text="@string/callString" />
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="65dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/emailButton"
+            style="@style/buttonText"
+            android:layout_width="244dp"
+            android:layout_height="95dp"
+            android:text="@string/emailString"
+            android:onClick="makeEmail"/>
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="65dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/directionsButton"
+            style="@style/buttonText"
+            android:layout_width="244dp"
+            android:layout_height="95dp"
+            android:text="@string/directionString"
+            android:onClick="makeDirections"/>
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="106dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="65dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/contactHome"
+            style="@style/buttonText"
+            android:layout_width="244dp"
+            android:layout_height="95dp"
+            android:text="@string/contactHome"
+            android:onClick="homePage"/>
+
+        <Space
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
